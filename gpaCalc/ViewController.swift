@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var gpatitle: UILabel!
-    
+    @IBOutlet weak var gr1: UITextField!
+    @IBOutlet weak var gr2: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +23,32 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+//    @IBAction func calcButton(_ sender: Any) {
+////        var grade1 = Int(gr1.text!)
+////        var grade2 = Int(gr2.text!)
+////
+////        var total = grade1! + grade2!
+////        var avg = String(total / 2)
+//
+//        let alertController = UIAlertController(title: "dis ur grade", message: "hi", preferredStyle: UIAlertControllerStyle.alert)
+//                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//                present(alertController, animated: true, completion: nil)
+//
+//    }
     
-    @IBAction func grade1(_ sender: UITextField) {
-    }
-    @IBAction func grade2(_ sender: UITextField) {
-    }
-    @IBAction func done(_ sender: Any) {
+    @IBAction func calcButton(_ sender: UIButton) {
+        var grade1 = Int(gr1.text!)
+        var grade2 = Int(gr2.text!)
+        var total = grade1! + grade2!
+        var avg = String(total / 2)
         
+        let alertController = UIAlertController(title: "dis ur grade", message: avg, preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            present(alertController, animated: true, completion: nil)
     }
+    
+
+    
     
 
 }

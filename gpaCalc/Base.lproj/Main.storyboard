@@ -30,9 +30,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="grade1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="gug-W8-ls2"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrS-wN-Q4R">
                                 <rect key="frame" x="133" y="133" width="97" height="30"/>
@@ -40,33 +37,32 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="grade2:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cDF-Vk-acs"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmA-3q-SP5">
-                                <rect key="frame" x="133" y="410" width="108" height="132"/>
+                                <rect key="frame" x="133" y="215" width="109" height="132"/>
                                 <color key="backgroundColor" red="0.310883244" green="0.27710076080000001" blue="0.55497085489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🤷‍♀️"/>
                                 <connections>
-                                    <action selector="done:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQz-xL-NSq"/>
+                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NV7-IM-0ah"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.85853469375065572" green="0.92983500013194786" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CmA-3q-SP5" secondAttribute="bottom" constant="125" id="49y-UM-COC"/>
+                            <constraint firstItem="CmA-3q-SP5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="BJq-sG-Uk8"/>
                             <constraint firstItem="OMH-RC-pQp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="D5n-9v-7sa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CmA-3q-SP5" secondAttribute="trailing" constant="133" id="EnW-3Z-C3F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OMH-RC-pQp" secondAttribute="trailing" constant="20" id="GBT-uD-UuA"/>
-                            <constraint firstItem="CmA-3q-SP5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="NPC-Jt-dS1"/>
                             <constraint firstItem="OMH-RC-pQp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OgR-rP-99N"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CmA-3q-SP5" secondAttribute="trailing" constant="134" id="dUe-1b-I5j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CmA-3q-SP5" secondAttribute="bottom" constant="320" id="ziI-wz-FV4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="gpatitle" destination="OMH-RC-pQp" id="BSh-NQ-nme"/>
+                        <outlet property="gr1" destination="d2S-vl-auU" id="g9C-K0-00W"/>
+                        <outlet property="gr2" destination="vrS-wN-Q4R" id="9vQ-ta-WAk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
