@@ -54,9 +54,9 @@
 		C47D2BEA200C76C00023586C /* gpaCalc */ = {
 			isa = PBXGroup;
 			children = (
-				C47D2BEB200C76C00023586C /* AppDelegate.swift */,
-				C47D2BED200C76C00023586C /* ViewController.swift */,
 				C47D2BEF200C76C00023586C /* Main.storyboard */,
+				C47D2BED200C76C00023586C /* ViewController.swift */,
+				C47D2BEB200C76C00023586C /* AppDelegate.swift */,
 				C47D2BF2200C76C00023586C /* Assets.xcassets */,
 				C47D2BF4200C76C00023586C /* LaunchScreen.storyboard */,
 				C47D2BF7200C76C00023586C /* Info.plist */,
